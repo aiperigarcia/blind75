@@ -21,3 +21,15 @@ rotate 1 steps to the right: [99,-1,-100,3]
 rotate 2 steps to the right: [3,99,-1,-100]
 
 */
+
+var rotate = function(nums, k) {
+    for (let i = 0; i < k; i++) {
+        nums.unshift(nums.pop());
+    }
+};
+
+Solution:
+1. Reverse the entire array.
+2. Reverse the first k elements.
+3. Reverse the rest.
+*/
