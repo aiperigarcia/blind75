@@ -28,6 +28,7 @@ var rotate = function(nums, k) {
     }
 };
 
+/* 
 Solution:
 1. Reverse the entire array.
 2. Reverse the first k elements.
