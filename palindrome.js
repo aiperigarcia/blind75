@@ -19,3 +19,8 @@ Output: false
 Explanation: "raceacar" is not a palindrome.
 
  */
+
+var isPalindrome = function(s) {
+    s = s.toLowerCase().replace(/[^a-z0-9]/gi, '')
+    return s.split('').reverse().join('') == s
+};
