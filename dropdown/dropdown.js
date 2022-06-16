@@ -1,4 +1,3 @@
-
 document.getElementById('generate').onclick = function() {
  
     var values = ["dog", "cat", "parrot", "rabbit"];
@@ -20,3 +19,4 @@ document.getElementById('generate').onclick = function() {
     label.htmlFor = "pets";
  
     document.getElementById("container").appendChild(label).appendChild(select);
+}
