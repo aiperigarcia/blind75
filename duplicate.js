@@ -44,4 +44,17 @@ var containsDuplicate = function(nums) {
           newSet.add(nums[i]) 
     } return false
 };
+
+var containsDuplicate = function(nums) {
+    const newArray = new Map();
+    for(let i = 0; i < nums.length; i++){
+        if(newArray.has(nums[i])) {
+            return true;
+        }
+            newArray.set(nums[i]);
+    }
+        return false;
+};
+
  */
+
